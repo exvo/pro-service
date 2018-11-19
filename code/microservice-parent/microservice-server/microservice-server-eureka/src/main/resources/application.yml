@@ -1,0 +1,15 @@
+server:
+  port: 8788
+
+spring:
+  application:
+    name: MICRO-SERVICE
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8788//eureka
