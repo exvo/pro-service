@@ -11,6 +11,8 @@
     <modules>
         <module>microservice-ms</module>
         <module>microservice-server</module>
+        <module>microservice-feign</module>
+        <module>microservice-web</module>
     </modules>
 
     <name>MICRO-SERVICE</name>
@@ -19,6 +21,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+
+        <project.version>1.0-SNAPSHOT</project.version>
     </properties>
 
     <parent>

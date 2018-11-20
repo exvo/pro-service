@@ -1,20 +1,20 @@
-package com.microservice.file;
+package com.microservice.feign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @Date: 2018/11/19
+ * @Date: 2018/11/20
  * @Author: wu yang
  * @Description:
  */
 @SpringBootApplication
-@EnableEurekaClient
-public class FileApplication {
-
+//@EnableEurekaClient
+@EnableFeignClients
+public class FeignApplication {
     public static void main(String[] args) {
-        SpringApplication.run(FileApplication.class, args);
+        SpringApplication.run(FeignApplication.class, args);
     }
-
 }

@@ -1,4 +1,4 @@
-package com.microservice.user.controller;
+package user.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;

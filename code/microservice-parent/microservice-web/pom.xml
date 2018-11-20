@@ -9,25 +9,24 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservice-ms</artifactId>
-    <packaging>pom</packaging>
-    <name>MS</name>
-    <modules>
-        <module>microservice-ms-user</module>
-        <module>microservice-ms-file</module>
-        <module>microserive-ms-user-1</module>
-    </modules>
+    <artifactId>microservice-web</artifactId>
 
     <dependencies>
+
+        <!--<dependency>-->
+            <!--<groupId>microservice</groupId>-->
+            <!--<artifactId>microservice-feign</artifactId>-->
+            <!--<version>${project.version}</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
         <dependency>
@@ -37,6 +36,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>

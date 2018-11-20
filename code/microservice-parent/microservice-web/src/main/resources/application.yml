@@ -1,0 +1,17 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: MICRO-SERVICE-WEB
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8788/eureka/
+
+#feign:
+#  hystrix:
+#    enabled: true

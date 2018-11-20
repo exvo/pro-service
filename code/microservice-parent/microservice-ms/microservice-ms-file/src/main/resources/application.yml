@@ -1,2 +1,14 @@
 server:
-  port: 8886
+  port: 8887
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://localhost:8788/eureka/
+
+spring:
+  application:
+    name: MICROSERVICE-FILE
