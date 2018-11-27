@@ -11,8 +11,8 @@
     <modules>
         <module>microservice-ms</module>
         <module>microservice-server</module>
-        <module>microservice-feign</module>
         <module>microservice-web</module>
+        <module>microservice-common</module>
     </modules>
 
     <name>MICRO-SERVICE</name>

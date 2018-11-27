@@ -1,16 +1,16 @@
-package com.microservice.feign.clients;
+package com.microservice.web.client;
 
 import org.springframework.stereotype.Component;
 
 /**
- * @Date: 2018/11/20
+ * @Date: 2018/11/27
  * @Author: wu yang
  * @Description:
  */
 @Component
-public class LoginClientsFallback implements LoginClients {
+public class LoginClientFallback implements LoginClient {
     @Override
-    public Object login() {
+    public String login() {
         return null;
     }
 }

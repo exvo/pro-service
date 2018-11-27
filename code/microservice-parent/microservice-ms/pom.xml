@@ -15,7 +15,6 @@
     <modules>
         <module>microservice-ms-user</module>
         <module>microservice-ms-file</module>
-        <module>microserive-ms-user-1</module>
     </modules>
 
     <dependencies>

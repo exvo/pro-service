@@ -1,5 +1,5 @@
 server:
-  port: 8989
+  port: 8898
   servlet:
     context-path: /api
 
@@ -12,6 +12,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:8788/eureka/
 
-#feign:
-#  hystrix:
-#    enabled: true
+feign:
+  hystrix:
+    enabled: true

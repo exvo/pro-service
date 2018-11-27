@@ -1,8 +1,7 @@
 package com.microservice.web.client;
 
-import com.microservice.web.config.FeignConfig;
+import com.microservice.common.constants.GetWays;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
@@ -10,13 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @Author: wu yang
  * @Description:
  */
-@Component
-@FeignClient(value = "MICRO-SERVICE-USER", configuration = FeignConfig.class)
+@FeignClient(value = GetWays.ZUUL, fallback = LoginClientFallback.class)
 public interface LoginClient {
 
-    String PATH = "/login";
+    String PATH = GetWays.ROUTE_API_PATH;
 
-    @PostMapping(value = PATH)
-    Object login();
+    @PostMapping(value = PATH + "/login")
+    String login();
 
 }

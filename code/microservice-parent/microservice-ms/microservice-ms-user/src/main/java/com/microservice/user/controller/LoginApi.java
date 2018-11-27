@@ -18,7 +18,13 @@ public class LoginApi {
     private String port;
 
     @PostMapping()
-    public Object login() {
+    public String login() {
+        try {
+            //微服务超时处理
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return "Login Success" + "PORT:" + port;
     }
 

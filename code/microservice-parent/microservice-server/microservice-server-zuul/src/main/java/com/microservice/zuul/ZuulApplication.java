@@ -1,20 +1,20 @@
-package com.microservice.user;
+package com.microservice.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
- * @Date: 2018/11/19
+ * @Date: 2018/11/27
  * @Author: wu yang
  * @Description:
  */
 @SpringBootApplication
+@EnableZuulProxy
 @EnableDiscoveryClient
-public class UserApplication {
-
+public class ZuulApplication {
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class, args);
+        SpringApplication.run(ZuulApplication.class, args);
     }
-
 }
