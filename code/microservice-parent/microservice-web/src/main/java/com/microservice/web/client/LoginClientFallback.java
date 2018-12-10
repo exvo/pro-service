@@ -11,6 +11,6 @@ import org.springframework.stereotype.Component;
 public class LoginClientFallback implements LoginClient {
     @Override
     public String login() {
-        return null;
+        return "调用失败";
     }
 }

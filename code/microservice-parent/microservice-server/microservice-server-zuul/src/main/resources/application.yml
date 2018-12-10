@@ -20,15 +20,22 @@ zuul:
     microservice-ms-file:
       serviceId: MICRO-SERVICE-FILE
       path: /file/**
+  host:
+    #默认10000
+    socket-timeout-millis: 10000
+    #默认2000
+    connect-timeout-millis: 2000
 
-ribbon:
-  eureka:
-    enabled: true
-
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 600
+#ribbon:
+#  eureka:
+#    enabled: true
+#  ReadTimeout: 10000
+#  ConnectTimeout: 10000
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 10000
